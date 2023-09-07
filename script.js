@@ -23,6 +23,7 @@ function FormatarCPF() {
 }
 
 function FormatarTel() {
+    SomenteNumero(event);
   inputTel.setAttribute("maxlength", "13");
   let inputlength = inputTel.value.length;
   if (inputlength == 1) {
@@ -37,6 +38,7 @@ function FormatarTel() {
 }
 
 function FormatarCel() {
+    SomenteNumero(event);
   inputCel.setAttribute("maxlength", "14");
   let inputlength = inputCel.value.length;
   if (inputlength == 1) {
@@ -51,7 +53,6 @@ function FormatarCel() {
 }
 
 function FormatarRG() {
-    SomenteNumero(event);
     inputRG.setAttribute("maxlength", "12");
     let inputlength = inputRG.value.length;
     if (inputlength == 2 || inputlength == 6) {
@@ -63,6 +64,7 @@ function FormatarRG() {
 }
 
 function FormatarCEP() {
+    SomenteNumero(event);
     inputCEP.setAttribute("maxlength", "9");
     let inputlength = inputCEP.value.length;
     if (inputlength == 5) {
